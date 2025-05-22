@@ -22,10 +22,8 @@ export async function POST(request: Request) {
       data: validatedData
     })
 
-    // Special handling for war declarations
     if (validatedData.declarationType === "war") {
       console.warn(`WAR DECLARATION RECEIVED from ${validatedData.nation}`)
-      // TODO: Implement war declaration handling logic
     }
 
     return NextResponse.json(
