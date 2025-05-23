@@ -44,6 +44,7 @@ export default function DiplomaticRelationsPage() {
   const [selectedDeclaration, setSelectedDeclaration] = useState<Declaration | null>(null)
   const [showInfoModal, setShowInfoModal] = useState(false)
   const [hasAcceptedPledge, setHasAcceptedPledge] = useState(false)
+  const [isLoadingDeclarations, setIsLoadingDeclarations] = useState(true)
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -64,12 +65,15 @@ export default function DiplomaticRelationsPage() {
 
   const fetchFeaturedDeclarations = async () => {
     try {
+      setIsLoadingDeclarations(true)
       const response = await fetch("/api/features")
       if (!response.ok) throw new Error("Failed to fetch featured declarations")
       const data = await response.json()
       setFeaturedDeclarations(data)
     } catch (error) {
       console.error("Error fetching featured declarations:", error)
+    } finally {
+      setIsLoadingDeclarations(false)
     }
   }
 
@@ -315,33 +319,43 @@ export default function DiplomaticRelationsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featuredDeclarations.map((declaration) => (
-              <motion.div
-                key={declaration.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white/5 rounded-lg p-4 hover:bg-white/10 transition-colors"
-              >
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-semibold text-white">{declaration.nation}</h3>
-                  <span className={`px-2 py-1 rounded text-sm ${
-                    declaration.declarationType === "war" 
-                      ? "bg-red-500/20 text-red-400" 
-                      : "bg-blue-500/20 text-blue-400"
-                  }`}>
-                    {declaration.declarationType}
-                  </span>
+            {isLoadingDeclarations ? (
+              <div className="col-span-full flex flex-col items-center justify-center py-12">
+                <div className="relative w-16 h-16">
+                  <div className="absolute top-0 left-0 w-full h-full border-4 border-white/20 rounded-full"></div>
+                  <div className="absolute top-0 left-0 w-full h-full border-4 border-white rounded-full animate-spin border-t-transparent"></div>
                 </div>
-                <p className="text-white/80 text-sm mb-4 line-clamp-2">{declaration.message}</p>
-                <Button
-                  variant="outline"
-                  className="w-full bg-white/5 border-white/20 text-white hover:bg-white/10"
-                  onClick={() => setSelectedDeclaration(declaration)}
+                <p className="mt-4 text-white/80 text-lg">Loading declarations...</p>
+              </div>
+            ) : (
+              featuredDeclarations.map((declaration) => (
+                <motion.div
+                  key={declaration.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-white/5 rounded-lg p-4 hover:bg-white/10 transition-colors"
                 >
-                  View Full Declaration
-                </Button>
-              </motion.div>
-            ))}
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-semibold text-white">{declaration.nation}</h3>
+                    <span className={`px-2 py-1 rounded text-sm ${
+                      declaration.declarationType === "war" 
+                        ? "bg-red-500/20 text-red-400" 
+                        : "bg-blue-500/20 text-blue-400"
+                    }`}>
+                      {declaration.declarationType}
+                    </span>
+                  </div>
+                  <p className="text-white/80 text-sm mb-4 line-clamp-2">{declaration.message}</p>
+                  <Button
+                    variant="outline"
+                    className="w-full bg-white/5 border-white/20 text-white hover:bg-white/10"
+                    onClick={() => setSelectedDeclaration(declaration)}
+                  >
+                    View Full Declaration
+                  </Button>
+                </motion.div>
+              ))
+            )}
           </div>
         </motion.div>
       </div>
