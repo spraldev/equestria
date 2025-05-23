@@ -28,12 +28,12 @@ export default function PledgeModal({ open, onOpenChange, onAccept, hasAccepted 
     if (pledgeTaken) {
       setPledgeTaken(false)
     }
-      onOpenChange(false)
+    onOpenChange(false)
   }
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="bg-gradient-to-br from-purple-900 to-blue-900 border-purple-500 text-white max-w-md">
+      <DialogContent className="bg-gradient-to-br from-purple-900 to-blue-900 border-purple-500 text-white max-w-md max-h-[90vh] flex flex-col">
         <DialogHeader>
           <DialogTitle className="text-2xl text-center">
             {hasAccepted ? "Pledge of Harmony" : "Take the Pledge of Harmony"}
@@ -45,11 +45,11 @@ export default function PledgeModal({ open, onOpenChange, onAccept, hasAccepted 
           </DialogDescription>
         </DialogHeader>
 
-        <div className="space-y-4 my-4">
+        <div className="flex-1 overflow-y-auto pr-2 -mr-2">
           {!pledgeTaken ? (
             <>
               <div className="bg-white/10 p-4 rounded-lg">
-                <p className="text-white/90 italic text-center">
+                <p className="text-white/90 italic text-center whitespace-pre-line">
 "I pledge my heart, hoof, and mind to the Communist Utopia of Equestria, homeland of industrial harmony.
 
 
@@ -77,19 +77,8 @@ I celebrate the diversity of our production methods, from earth pony strength to
 I honor the memory of the Battle of Rule and Havoc, and will maintain the system it established.
 
 
-Until the last factory falls silent, I serve Equestria with loyalty, efficiency, and unbreakable unity.
-
-"
+Until the last factory falls silent, I serve Equestria with loyalty, efficiency, and unbreakable unity."
                 </p>
-              </div>
-
-              <div className="flex justify-center">
-                <Button
-                  onClick={handlePledge}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-                >
-                  Take the Pledge
-                </Button>
               </div>
             </>
           ) : (
@@ -106,6 +95,17 @@ Until the last factory falls silent, I serve Equestria with loyalty, efficiency,
             </motion.div>
           )}
         </div>
+
+        {!pledgeTaken && (
+          <div className="pt-4 mt-4 border-t border-white/10">
+            <Button
+              onClick={handlePledge}
+              className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            >
+              Take the Pledge
+            </Button>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   )

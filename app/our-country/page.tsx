@@ -12,7 +12,7 @@ export default function OurCountryPage() {
       image: "/ponyville.png",
     },
     {
-      name: "Canterplot",
+      name: "Canterlot",
       description: "The capital city, home to the government and cultural center.",
       image: "/canterplot.png",
     },
