@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Check } from "lucide-react"
+import { Check, Info } from "lucide-react"
 
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
@@ -28,7 +28,7 @@ export default function PledgeModal({ open, onOpenChange, onAccept, hasAccepted 
     if (pledgeTaken) {
       setPledgeTaken(false)
     }
-    onOpenChange(false)
+      onOpenChange(false)
   }
 
   return (
@@ -48,6 +48,14 @@ export default function PledgeModal({ open, onOpenChange, onAccept, hasAccepted 
         <div className="flex-1 overflow-y-auto pr-2 -mr-2">
           {!pledgeTaken ? (
             <>
+              <div className="bg-white/10 p-4 rounded-lg mb-4">
+                <div className="flex items-start gap-3">
+                  <Info className="h-5 w-5 text-purple-300 mt-0.5 flex-shrink-0" />
+                  <p className="text-white/90 text-sm">
+                    IMPORTANT: This is purely for fun! We will NOT use this against you or your country during ANY conference or diplomatic meeting. There are no hidden clauses or fine print - it's just a playful way to show you appreciate our unique culture. Feel free to take it or not, no pressure!
+                  </p>
+                </div>
+              </div>
               <div className="bg-white/10 p-4 rounded-lg">
                 <p className="text-white/90 italic text-center whitespace-pre-line">
 "I pledge my heart, hoof, and mind to the Communist Utopia of Equestria, homeland of industrial harmony.

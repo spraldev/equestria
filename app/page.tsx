@@ -6,6 +6,7 @@ import { ChevronRight, MapPin, Scroll, Sparkles } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import PledgeModal from "@/components/pledge-modal"
+import ImageCarousel from "@/components/image-carousel"
 import { useState, useEffect } from "react"
 
 interface FeatureCardProps {
@@ -43,6 +44,15 @@ export default function Home() {
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Where manufacturing powers progress and equality is our strength
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mb-12"
+        >
+          <ImageCarousel />
         </motion.div>
 
         <motion.div
