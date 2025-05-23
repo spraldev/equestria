@@ -97,6 +97,7 @@ export default function ImageCarousel() {
         isOpen={showModal}
         onClose={() => setShowModal(false)}
         className="max-w-none w-screen h-screen bg-black/90"
+        title={images[currentIndex].alt}
       >
         <div className="relative w-full h-full flex items-center justify-center p-4">
           <motion.div
