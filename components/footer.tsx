@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Info } from "lucide-react"
+import { Info, Github } from "lucide-react"
 import { useState } from "react"
 import { Modal } from "@/components/ui/modal"
 
@@ -21,6 +21,14 @@ function FooterContent() {
           spral
         </Link>
         <span> (spursh)</span>
+        <Link
+          href="https://github.com/spraldev/equestria"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-2 text-white/80 hover:text-white transition-colors"
+        >
+          <Github className="h-4 w-4" />
+        </Link>
         <button
           onClick={() => setShowInfoModal(true)}
           className="ml-2 text-white/80 hover:text-white transition-colors"
