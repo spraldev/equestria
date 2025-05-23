@@ -202,9 +202,9 @@ export default function DiplomaticRelationsPage() {
                     <FormItem>
                       <FormLabel className="text-white">Your Nation</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter your nation's name"
-                          className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                    <Input
+                      placeholder="Enter your nation's name"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                           {...field}
                         />
                       </FormControl>
@@ -220,9 +220,9 @@ export default function DiplomaticRelationsPage() {
                     <FormItem>
                       <FormLabel className="text-white">Representative Name</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Enter your name and title"
-                          className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                    <Input
+                      placeholder="Enter your name and title"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                           {...field}
                         />
                       </FormControl>
@@ -239,9 +239,9 @@ export default function DiplomaticRelationsPage() {
                       <FormLabel className="text-white">Declaration Type</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-white/10 border-white/20 text-white">
+                      <SelectTrigger className="bg-white/10 border-white/20 text-white">
                             <SelectValue placeholder="Select declaration type" className="text-white" />
-                          </SelectTrigger>
+                      </SelectTrigger>
                         </FormControl>
                         <SelectContent className="bg-white/10 border-white/20 backdrop-blur-lg">
                           <SelectItem value="trade" className="text-white focus:bg-white/20">Trade Agreement</SelectItem>
@@ -249,8 +249,8 @@ export default function DiplomaticRelationsPage() {
                           <SelectItem value="manufacturing" className="text-white focus:bg-white/20">Manufacturing Partnership</SelectItem>
                           <SelectItem value="alliance" className="text-white focus:bg-white/20">Alliance Proposal</SelectItem>
                           <SelectItem value="war" className="text-red-400 focus:bg-red-400/20">Declaration of War</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      </SelectContent>
+                    </Select>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -263,9 +263,9 @@ export default function DiplomaticRelationsPage() {
                     <FormItem>
                       <FormLabel className="text-white">Your Message</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Share your intentions and hopes for our diplomatic relationship"
-                          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 min-h-[150px]"
+                    <Textarea
+                      placeholder="Share your intentions and hopes for our diplomatic relationship"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 min-h-[150px]"
                           {...field}
                         />
                       </FormControl>
@@ -274,9 +274,9 @@ export default function DiplomaticRelationsPage() {
                   )}
                 />
 
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-purple-700 to-blue-600 hover:from-purple-800 hover:to-blue-700"
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-purple-700 to-blue-600 hover:from-purple-800 hover:to-blue-700"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -286,12 +286,12 @@ export default function DiplomaticRelationsPage() {
                     </div>
                   ) : (
                     <>
-                      <Send className="mr-2 h-4 w-4" />
-                      Send Declaration
+                    <Send className="mr-2 h-4 w-4" />
+                    Send Declaration
                     </>
                   )}
-                </Button>
-              </form>
+                  </Button>
+                </form>
             </Form>
           </motion.div>
         </div>
@@ -389,7 +389,7 @@ export default function DiplomaticRelationsPage() {
             "Even in diplomacy, there's room for a little magic and wonder."
             <br />- Starlight Glimmer
           </p>
-        </div>
+      </div>
       </Modal>
     </div>
   )

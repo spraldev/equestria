@@ -28,7 +28,7 @@ export default function PledgeModal({ open, onOpenChange, onAccept, hasAccepted 
     if (pledgeTaken) {
       setPledgeTaken(false)
     }
-    onOpenChange(false)
+      onOpenChange(false)
   }
 
   return (

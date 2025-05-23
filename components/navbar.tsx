@@ -3,10 +3,13 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Sparkles } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import AIChatModal from "@/components/ai-chat-modal"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isAIChatOpen, setIsAIChatOpen] = useState(false)
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -26,8 +29,7 @@ export default function Navbar() {
             </Link>
           </motion.div>
 
-
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -43,17 +45,35 @@ export default function Navbar() {
                 </Link>
               </motion.div>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navItems.length * 0.1, duration: 0.5 }}
+            >
+              <Button
+                onClick={() => setIsAIChatOpen(true)}
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
+              >
+                <Sparkles className="h-4 w-4 mr-2" />
+                Equestrian AI
+              </Button>
+            </motion.div>
           </div>
 
-
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <Button
+              onClick={() => setIsAIChatOpen(true)}
+              size="icon"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
+            >
+              <Sparkles className="h-4 w-4" />
+            </Button>
             <button onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-purple-200 focus:outline-none">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
       </div>
-
 
       {isOpen && (
         <motion.div
@@ -82,6 +102,8 @@ export default function Navbar() {
           </div>
         </motion.div>
       )}
+
+      <AIChatModal open={isAIChatOpen} onOpenChange={setIsAIChatOpen} />
     </nav>
   )
 }
