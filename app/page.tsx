@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ChevronRight, MapPin, Scroll, Sparkles } from "lucide-react"
+import { ChevronRight, MapPin, Scroll, Sparkles, MessageCircle } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import PledgeModal from "@/components/pledge-modal"
@@ -59,7 +59,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 justify-center max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 justify-center max-w-6xl mx-auto"
         >
           <FeatureCard
             title="Our Country"
@@ -74,6 +74,13 @@ export default function Home() {
             icon={<Sparkles className="h-8 w-8 text-purple-200" />}
             href="/economy"
             delay={0.2}
+          />
+          <FeatureCard
+            title="Chat with Ponies"
+            description="Engage with our dedicated commune members and learn about equality"
+            icon={<MessageCircle className="h-8 w-8 text-purple-200" />}
+            href="/chatwithponies"
+            delay={0.3}
           />
         </motion.div>
 

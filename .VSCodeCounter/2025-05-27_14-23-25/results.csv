@@ -1,0 +1,71 @@
+"filename", "language", "TypeScript", "JSON with Comments", "JSON", "JavaScript", "Prisma", "XML", "TypeScript JSX", "Markdown", "CSS", "comment", "blank", "total"
+"/Users/spursh/Documents/code/equestria/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"/Users/spursh/Documents/code/equestria/app/api/diplomatic-relations/route.ts", "TypeScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 57
+"/Users/spursh/Documents/code/equestria/app/api/features/route.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/spursh/Documents/code/equestria/app/diplomatic-relations/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 378, 0, 0, 0, 33, 411
+"/Users/spursh/Documents/code/equestria/app/economy/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 13, 122
+"/Users/spursh/Documents/code/equestria/app/globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 129, 1, 9, 139
+"/Users/spursh/Documents/code/equestria/app/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 4, 39
+"/Users/spursh/Documents/code/equestria/app/maps/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 195, 0, 0, 0, 19, 214
+"/Users/spursh/Documents/code/equestria/app/our-country/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 111, 0, 0, 0, 15, 126
+"/Users/spursh/Documents/code/equestria/app/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 167, 0, 0, 0, 17, 184
+"/Users/spursh/Documents/code/equestria/app/test-images/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 2, 33
+"/Users/spursh/Documents/code/equestria/components.json", "JSON", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 21
+"/Users/spursh/Documents/code/equestria/components/3d/AnimatedBackground.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 83, 0, 0, 3, 8, 94
+"/Users/spursh/Documents/code/equestria/components/3d/FeatureCard3D.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 118, 0, 0, 8, 14, 140
+"/Users/spursh/Documents/code/equestria/components/3d/FloatingFactory.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 39, 0, 0, 5, 7, 51
+"/Users/spursh/Documents/code/equestria/components/3d/MagicalParticles.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 59, 0, 0, 2, 6, 67
+"/Users/spursh/Documents/code/equestria/components/3d/Scene.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 107, 0, 0, 2, 6, 115
+"/Users/spursh/Documents/code/equestria/components/ai-chat-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 167, 0, 0, 0, 17, 184
+"/Users/spursh/Documents/code/equestria/components/animated-footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 2, 16
+"/Users/spursh/Documents/code/equestria/components/footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 5, 72
+"/Users/spursh/Documents/code/equestria/components/image-carousel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 138, 0, 0, 0, 14, 152
+"/Users/spursh/Documents/code/equestria/components/navbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 101, 0, 0, 0, 9, 110
+"/Users/spursh/Documents/code/equestria/components/pledge-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 93, 0, 0, 0, 28, 121
+"/Users/spursh/Documents/code/equestria/components/theme-provider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 2, 18
+"/Users/spursh/Documents/code/equestria/components/theme-toggle.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 48, 0, 0, 1, 9, 58
+"/Users/spursh/Documents/code/equestria/components/ui/button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 6, 60
+"/Users/spursh/Documents/code/equestria/components/ui/dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 122, 0, 0, 0, 14, 136
+"/Users/spursh/Documents/code/equestria/components/ui/dropdown-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 239, 0, 0, 0, 19, 258
+"/Users/spursh/Documents/code/equestria/components/ui/form.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 143, 0, 0, 0, 25, 168
+"/Users/spursh/Documents/code/equestria/components/ui/input.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 4, 22
+"/Users/spursh/Documents/code/equestria/components/ui/label.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 5, 25
+"/Users/spursh/Documents/code/equestria/components/ui/modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 2, 24
+"/Users/spursh/Documents/code/equestria/components/ui/select.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 172, 0, 0, 0, 14, 186
+"/Users/spursh/Documents/code/equestria/components/ui/textarea.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 4, 19
+"/Users/spursh/Documents/code/equestria/lib/ai-helper.ts", "TypeScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 97
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/client.d.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/client.js", "JavaScript", 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 1, 4
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/default.d.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/default.js", "JavaScript", 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 1, 4
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/edge.d.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/edge.js", "JavaScript", 0, 0, 0, 148, 0, 0, 0, 0, 0, 21, 27, 196
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/index-browser.js", "JavaScript", 0, 0, 0, 136, 0, 0, 0, 0, 0, 21, 26, 183
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/index.d.ts", "TypeScript", 1195, 0, 0, 0, 0, 0, 0, 0, 0, 943, 286, 2424
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/index.js", "JavaScript", 0, 0, 0, 162, 0, 0, 0, 0, 0, 23, 32, 217
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/package.json", "JSON", 0, 0, 140, 0, 0, 0, 0, 0, 0, 0, 0, 140
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/edge-esm.js", "JavaScript", 0, 0, 0, 24, 0, 0, 0, 0, 0, 3, 8, 35
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/edge.js", "JavaScript", 0, 0, 0, 24, 0, 0, 0, 0, 0, 3, 8, 35
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/index-browser.d.ts", "TypeScript", 264, 0, 0, 0, 0, 0, 0, 0, 0, 20, 87, 371
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/index-browser.js", "JavaScript", 0, 0, 0, 1, 0, 0, 0, 0, 0, 14, 2, 17
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/library.d.ts", "TypeScript", 2343, 0, 0, 0, 0, 0, 0, 0, 0, 846, 459, 3648
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/library.js", "JavaScript", 0, 0, 0, 101, 0, 0, 0, 0, 0, 16, 30, 147
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/react-native.js", "JavaScript", 0, 0, 0, 63, 0, 0, 0, 0, 0, 5, 16, 84
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/runtime/wasm.js", "JavaScript", 0, 0, 0, 25, 0, 0, 0, 0, 0, 3, 8, 36
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/schema.prisma", "Prisma", 0, 0, 0, 0, 23, 0, 0, 0, 0, 4, 6, 33
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/wasm.d.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/lib/generated/prisma/wasm.js", "JavaScript", 0, 0, 0, 136, 0, 0, 0, 0, 0, 21, 26, 183
+"/Users/spursh/Documents/code/equestria/lib/prisma.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 11
+"/Users/spursh/Documents/code/equestria/lib/utils.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/spursh/Documents/code/equestria/next.config.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 15
+"/Users/spursh/Documents/code/equestria/package-lock.json", "JSON", 0, 0, 3323, 0, 0, 0, 0, 0, 0, 0, 1, 3324
+"/Users/spursh/Documents/code/equestria/package.json", "JSON", 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 1, 44
+"/Users/spursh/Documents/code/equestria/postcss.config.mjs", "JavaScript", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/spursh/Documents/code/equestria/prisma/schema.prisma", "Prisma", 0, 0, 0, 0, 23, 0, 0, 0, 0, 4, 7, 34
+"/Users/spursh/Documents/code/equestria/public/file.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/public/globe.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/public/next.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/public/vercel.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/public/window.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/spursh/Documents/code/equestria/tsconfig.json", "JSON with Comments", 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 1, 28
+"Total", "-", 3978, 27, 3527, 826, 46, 5, 2881, 4, 129, 1974, 1403, 14800

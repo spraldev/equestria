@@ -1,0 +1,41 @@
+Date : 2025-05-26 23:04:47
+Directory : /Users/spursh/Documents/code/equestria
+Total : 10 files,  576 codes, 20 comments, 56 blanks, all 652 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript JSX |         10 |        576 |         20 |         56 |        652 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                           |         10 |        576 |         20 |         56 |        652 |
+| app                                                                         |          2 |         23 |          0 |          1 |         24 |
+| app (Files)                                                                 |          1 |          9 |          0 |          1 |         10 |
+| app/diplomatic-relations                                                    |          1 |         14 |          0 |          0 |         14 |
+| components                                                                  |          8 |        553 |         20 |         55 |        628 |
+| components (Files)                                                          |          2 |        146 |          0 |         14 |        160 |
+| components/3d                                                               |          5 |        406 |         20 |         41 |        467 |
+| components/ui                                                               |          1 |          1 |          0 |          0 |          1 |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                    | language       | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/spursh/Documents/code/equestria/app/diplomatic-relations/page.tsx    | TypeScript JSX |         14 |          0 |          0 |         14 |
+| /Users/spursh/Documents/code/equestria/app/page.tsx                         | TypeScript JSX |          9 |          0 |          1 |         10 |
+| /Users/spursh/Documents/code/equestria/components/3d/AnimatedBackground.tsx | TypeScript JSX |         83 |          3 |          8 |         94 |
+| /Users/spursh/Documents/code/equestria/components/3d/FeatureCard3D.tsx      | TypeScript JSX |        118 |          8 |         14 |        140 |
+| /Users/spursh/Documents/code/equestria/components/3d/FloatingFactory.tsx    | TypeScript JSX |         39 |          5 |          7 |         51 |
+| /Users/spursh/Documents/code/equestria/components/3d/MagicalParticles.tsx   | TypeScript JSX |         59 |          2 |          6 |         67 |
+| /Users/spursh/Documents/code/equestria/components/3d/Scene.tsx              | TypeScript JSX |        107 |          2 |          6 |        115 |
+| /Users/spursh/Documents/code/equestria/components/image-carousel.tsx        | TypeScript JSX |        138 |          0 |         14 |        152 |
+| /Users/spursh/Documents/code/equestria/components/pledge-modal.tsx          | TypeScript JSX |          8 |          0 |          0 |          8 |
+| /Users/spursh/Documents/code/equestria/components/ui/modal.tsx              | TypeScript JSX |          1 |          0 |          0 |          1 |
+| Total                                                                       |                |        576 |         20 |         56 |        652 |
++-----------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
